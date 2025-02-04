@@ -1,0 +1,62 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    grid-template-rows: auto;
+    height: 100vh;
+    overflow: hidden;
+}
+.sidebar {
+    background: linear-gradient(135deg, #4f46e5, #6d28d9);
+    color: white;
+    width: 16rem;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+}
+.sidebar a {
+    transition: all 0.3s ease;
+}
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+.sidebar-link {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sidebar-text {
+    transition: opacity 0.3s ease;
+}
+
+#toggleSidebar svg {
+    transition: transform 0.3s ease;
+}
+
+#sidebar {
+    width: 16rem;
+    transition: width 0.3s ease;
+}
+
+#mainContent {
+    margin-left: 16rem;
+}
+.header {
+    background: #f3f4f6;
+    padding: 1rem 2rem;
+}
+.widget {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.widget:hover {
+    transform: translateY(-5px);
+}
+.grid-layout {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 2rem;
+}
